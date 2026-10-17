@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "histalias"
+version = "1.0.0"
+description = "Turn the long shell commands you keep retyping into short aliases"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Krrish", email = "codewithkrrish7@gmail.com" }]
+requires-python = ">=3.9"
+keywords = ["cli", "shell", "bash", "zsh", "aliases", "productivity"]
+
+[project.scripts]
+histalias = "histalias.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["histalias*"]
